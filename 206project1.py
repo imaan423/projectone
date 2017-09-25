@@ -110,6 +110,7 @@ def mySortPrint(a,col,fileName):
         write_file.write(",")
         write_file.write(person["DOB"])
         write_file.write("\n")
+    print (write_file) 
     write_file.close()
 
 
