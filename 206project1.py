@@ -97,7 +97,7 @@ def mySortPrint(a,col,fileName):
 #Input: list of dictionaries, key to sort by and output file name
 #Output: None
 
-    write_file =  open(fileName, 'w')
+    write_file = open(fileName, 'w')
     new_list = sorted(a, key=lambda x:x[col])
     for person in new_list:
         write_file.write(person["First"])
@@ -105,10 +105,6 @@ def mySortPrint(a,col,fileName):
         write_file.write(person["Last"])
         write_file.write(",")
         write_file.write(person["Email"])
-        write_file.write(",")
-        write_file.write(person["Class"])
-        write_file.write(",")
-        write_file.write(person["DOB"])
         write_file.write("\n")
     write_file.close()
 
